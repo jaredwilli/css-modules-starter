@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else {
+		var a = factory();
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(typeof self !== 'undefined' ? self : this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -65,47 +75,10 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _hello = __webpack_require__(1);
-
-var _hello2 = _interopRequireDefault(_hello);
-
-var _app = __webpack_require__(2);
-
-var _app2 = _interopRequireDefault(_app);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var element = '\n<div class="' + _app2.default.element + '">\n  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laudantium recusandae itaque libero velit minus ex reiciendis veniam. Eligendi modi sint delectus beatae nemo provident ratione maiores, voluptatibus a tempore!</p>\n</div>\n';
-
-document.write(element);
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var greetings = function greetings(text, person) {
-    return text + ", " + person + ". I read you but I\u2019m sorry, I\u2019m afraid I can\u2019t do that.";
-};
-
-exports.default = greetings;
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
-module.exports = {"element":"_1MmQgeaocIhjdVMAQt0EIm"};
+throw new Error("Module build failed: Error: Couldn't find preset \"es2016\" relative to directory \"/Users/jaredwilli/Sites/_playground/css-modules\"\n    at /Users/jaredwilli/Sites/_playground/css-modules/node_modules/babel-core/lib/transformation/file/options/option-manager.js:293:19\n    at Array.map (native)\n    at OptionManager.resolvePresets (/Users/jaredwilli/Sites/_playground/css-modules/node_modules/babel-core/lib/transformation/file/options/option-manager.js:275:20)\n    at OptionManager.mergePresets (/Users/jaredwilli/Sites/_playground/css-modules/node_modules/babel-core/lib/transformation/file/options/option-manager.js:264:10)\n    at OptionManager.mergeOptions (/Users/jaredwilli/Sites/_playground/css-modules/node_modules/babel-core/lib/transformation/file/options/option-manager.js:249:14)\n    at OptionManager.init (/Users/jaredwilli/Sites/_playground/css-modules/node_modules/babel-core/lib/transformation/file/options/option-manager.js:368:12)\n    at File.initOptions (/Users/jaredwilli/Sites/_playground/css-modules/node_modules/babel-core/lib/transformation/file/index.js:212:65)\n    at new File (/Users/jaredwilli/Sites/_playground/css-modules/node_modules/babel-core/lib/transformation/file/index.js:135:24)\n    at Pipeline.transform (/Users/jaredwilli/Sites/_playground/css-modules/node_modules/babel-core/lib/transformation/pipeline.js:46:16)\n    at transpile (/Users/jaredwilli/Sites/_playground/css-modules/node_modules/babel-loader/lib/index.js:50:20)\n    at Object.module.exports (/Users/jaredwilli/Sites/_playground/css-modules/node_modules/babel-loader/lib/index.js:175:20)");
 
 /***/ })
 /******/ ]);
+});

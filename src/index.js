@@ -1,11 +1,9 @@
-import greetings from './hello.js'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import styles from './app.css';
+import Main from './templates/Main';
 
-let element = `
-<div class="${styles.element}">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur laudantium recusandae itaque libero velit minus ex reiciendis veniam. Eligendi modi sint delectus beatae nemo provident ratione maiores, voluptatibus a tempore!</p>
-</div>
-`
-
-document.write(element);
+ReactDOM.render(
+    <Main />,
+    document.getElementById('root')
+);
